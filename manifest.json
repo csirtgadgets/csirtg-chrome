@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "WhiteFace",
-  "description": "Chrome extension for WhiteFace",
-  "version": "1.0",
+  "name": "CSIRTG",
+  "description": "Chrome extension for CSIRTG",
+  "version": "1.1",
 
 //  "browser_action": {
 //    "default_icon": "icon.png",
@@ -27,7 +27,7 @@
     "contextMenus",
     "tabs",
     "https://ajax.googleapis.com/",
-    "https://whiteface.csirtgadgets.com/*"
+    "https://csirtg.io/*"
   ],
-  "omnibox": { "keyword": "wf" }
+  "omnibox": { "keyword": "cg" }
 }
