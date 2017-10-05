@@ -21,7 +21,6 @@ var CSIRTG = {
             xhr.setRequestHeader('Content-Type', 'application/json');
         }
         data = JSON.stringify({ indicator: args.data });
-        console.log(data);
         $.ajax({
             url: args.remote,
             type: 'POST',
