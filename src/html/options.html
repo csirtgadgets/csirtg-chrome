@@ -1,0 +1,40 @@
+<!--https://developer.chrome.com/extensions/options-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Options</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+
+    <p>
+        <div class="input-group input-group-lg">
+        <label>Username: </label>
+            <input type="text" id="user" class="form-control" placeholder="username" size="72%">
+        </div>
+    </p>
+
+    <p>
+    <div class="input-group input-group-lg">
+        <label>Token: </label>
+        <input type="text" id="token" class="form-control" placeholder="token" size="72%">
+    </div>
+    </p>
+
+    <p>
+    <div class="input-group input-group-lg">
+        <label>Default Feed: </label>
+        <input type="text" id="feed" class="form-control" size="72%">
+    </div>
+    </p>
+
+
+    <div id="status"></div>
+    <button class="btn btn-primary" id="save">Save</button>
+    <script src="../js/options.js"></script>
+</body>
+</html>
