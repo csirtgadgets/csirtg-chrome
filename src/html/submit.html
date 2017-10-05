@@ -35,9 +35,6 @@
         <ul class="nav navbar-nav">
             <li><a href="search.html">Search</a></li>
         </ul>
-        <ul class="nav navbar-nav">
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
     </div>
 </nav>
 
@@ -47,21 +44,20 @@
             <h1>Submit</h1>
         </div>
         <div id="results"></div>
-        <form class="form-horizontal" id="myform">
+        <form class="form-horizontal" id="indicator_form">
             <div class="form-group input-group-lg">
-                <input class="form-control" type="text" placeholder="evilbit.com" id="indicator" name="indicator">
+                <input class="form-control" placeholder="evilbit.com" id="indicator" name="indicator">
             </div>
             <div class="form-group input-group-lg">
-                <input class="form-control" type="text" placeholder="short description" id="description" name="description">
-            </div>
-
-            <div class="form-group input-group-lg">
-                <input class="form-control" type="text" name="tags" placeholder="ssh, zeus">
+                <input class="form-control" placeholder="short description" id="description" name="description">
             </div>
 
             <div class="form-group input-group-lg">
-                <select class="form-control" name="feed" list="feeds">
-                    <option value="default">Default</option>
+                <input class="form-control" name="tags" placeholder="ssh, zeus">
+            </div>
+
+            <div class="form-group input-group-lg">
+                <select class="form-control" id="feeds">
                 </select>
             </div>
 
@@ -71,5 +67,8 @@
         </form>
     </div>
 </div>
+<script src="../js/csirtg.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/submit.js"></script>
 </body>
 </html>

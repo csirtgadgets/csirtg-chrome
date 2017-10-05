@@ -10,7 +10,15 @@
       "js/menu.js"
     ]
   },
-  "options_page": "html/options.html",
+  "options_ui": {
+    // Required.
+    "page": "html/options.html",
+    // Recommended.
+    "chrome_style": true
+    // Not recommended; only provided for backwards compatibility,
+    // and will be unsupported in a future version of Chrome (TBD).
+    //"open_in_tab": true
+  },
   //required
   "browser_action": {
     "default_popup": "html/submit.html"
@@ -25,7 +33,8 @@
     "https://*/*",
     "activeTab",
     "contextMenus",
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/ https://maxcdn.bootstrapcdn.com/bootstrap/ https://csirtg.io; object-src 'self'",
   "omnibox": { "keyword": "cg" }
