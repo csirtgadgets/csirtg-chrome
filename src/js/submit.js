@@ -55,3 +55,17 @@ $( "#indicator_form" ).on( "submit", function( event ) {
     });
 
 });
+
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+    // Handle message.
+    // In this example, message === 'whatever value; String, object, whatever'
+    document.getElementById("indicator").value = message;
+});
+
+
+// Ajax activity indicator bound to ajax start/stop document events
+$(document).ajaxStart(function(){
+    $('#ajaxBusy').show();
+}).ajaxStop(function(){
+    $('#ajaxBusy').hide();
+});

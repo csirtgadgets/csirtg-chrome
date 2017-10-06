@@ -3,7 +3,7 @@
   "name": "CSIRTG",
   "short_name": "CSIRTG",
   "description": "Chrome extension for CSIRTG",
-  "version": "1.2",
+  "version": "1.2.1",
 
   "background": {
     "scripts": [
